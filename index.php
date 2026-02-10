@@ -101,7 +101,7 @@ if (!empty($config->availabilityDomains)) {
 foreach ($availabilityDomains as $availabilityDomainEntity) {
     $availabilityDomain = is_array($availabilityDomainEntity) ? $availabilityDomainEntity['name'] : $availabilityDomainEntity;
     try {
-        $instanceDetails = $api->createInstance($config, $shape, getenv('OCI_SSH_PUBLIC_KEY'), $availabilityDomain);
+        $instanceDetails = $api->createInstance($config, $shape, trim((string) getenv('OCI_SSH_PUBLIC_KEY')), $availabilityDomain);
     } catch(ApiCallException $e) {
         $message = $e->getMessage();
         echo "$message\n";
