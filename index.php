@@ -28,7 +28,8 @@ echo "--- DEBUG START ---\n";
 $debugKeys = ['OCI_REGION', 'OCI_USER_ID', 'OCI_TENANCY_ID', 'OCI_KEY_FINGERPRINT'];
 foreach ($debugKeys as $key) {
     $val = (string) getenv($key);
-    echo "$key (Hex): " . bin2hex($val) . " | Length: " . strlen($val) . "\n";
+    // Write to STDERR to ensure it shows up in GitHub Logs even if script crashes
+    fwrite(STDERR, "$key (Hex): " . bin2hex($val) . " | Length: " . strlen($val) . "\n");
 }
 echo "--- DEBUG END ---\n";
 
