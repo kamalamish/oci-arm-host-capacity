@@ -25,14 +25,14 @@ $dotenv->safeLoad();
  * README.md now has all the information.
  */
 $config = new OciConfig(
-    getenv('OCI_REGION'),
-    getenv('OCI_USER_ID'),
-    getenv('OCI_TENANCY_ID'),
-    getenv('OCI_KEY_FINGERPRINT'),
-    getenv('OCI_PRIVATE_KEY_FILENAME'),
-    getenv('OCI_AVAILABILITY_DOMAIN') ?: null, // null or '' or 'jYtI:PHX-AD-1' or ['jYtI:PHX-AD-1','jYtI:PHX-AD-2']
-    getenv('OCI_SUBNET_ID'),
-    getenv('OCI_IMAGE_ID'),
+    trim((string) getenv('OCI_REGION')),
+    trim((string) getenv('OCI_USER_ID')),
+    trim((string) getenv('OCI_TENANCY_ID')),
+    trim((string) getenv('OCI_KEY_FINGERPRINT')),
+    trim((string) getenv('OCI_PRIVATE_KEY_FILENAME')),
+    trim((string) getenv('OCI_AVAILABILITY_DOMAIN')) ?: null, // null or '' or 'jYtI:PHX-AD-1' or ['jYtI:PHX-AD-1','jYtI:PHX-AD-2']
+    trim((string) getenv('OCI_SUBNET_ID')),
+    trim((string) getenv('OCI_IMAGE_ID')),
     (int) getenv('OCI_OCPUS'),
     (int) getenv('OCI_MEMORY_IN_GBS')
 );
