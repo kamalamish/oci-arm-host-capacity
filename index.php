@@ -24,7 +24,7 @@ $dotenv->safeLoad();
  *
  * README.md now has all the information.
  */
-echo "--- DEBUG START ---\n";
+echo "--- DEBUG START (Version: " . date('Y-m-d H:i:s') . ") ---\n";
 $debugKeys = ['OCI_REGION', 'OCI_USER_ID', 'OCI_TENANCY_ID', 'OCI_KEY_FINGERPRINT'];
 foreach ($debugKeys as $key) {
     $val = (string) getenv($key);
