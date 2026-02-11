@@ -24,14 +24,7 @@ $dotenv->safeLoad();
  *
  * README.md now has all the information.
  */
-echo "--- DEBUG START (Version: " . date('Y-m-d H:i:s') . ") ---\n";
-$debugKeys = ['OCI_REGION', 'OCI_USER_ID', 'OCI_TENANCY_ID', 'OCI_KEY_FINGERPRINT'];
-foreach ($debugKeys as $key) {
-    $val = (string) getenv($key);
-    // Write to STDERR to ensure it shows up in GitHub Logs even if script crashes
-    fwrite(STDERR, "$key (Hex): " . bin2hex($val) . " | Length: " . strlen($val) . "\n");
-}
-echo "--- DEBUG END ---\n";
+
 
 $config = new OciConfig(
     trim((string) getenv('OCI_REGION')),
