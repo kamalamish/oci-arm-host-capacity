@@ -1,2 +1,9 @@
 vendor/
 .env
+*.pem
+check_fingerprint.php
+reproduce_issue.php
+prepare_github_secrets.php
+register_task.ps1
+show_public_key.php
+debug_key.php

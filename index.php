@@ -9,6 +9,7 @@ require "{$pathPrefix}vendor/autoload.php";
 
 use Dotenv\Dotenv;
 use Hitrov\Exception\ApiCallException;
+use Hitrov\Exception\TooManyRequestsWaiterException;
 use Hitrov\FileCache;
 use Hitrov\OciApi;
 use Hitrov\OciConfig;
@@ -113,6 +114,10 @@ foreach ($availabilityDomains as $availabilityDomainEntity) {
         }
 
         // current config is broken
+        return;
+    } catch (TooManyRequestsWaiterException $e) {
+        echo "Rate limit reached: " . $e->getMessage() . "\n";
+        // Exit gracefully to allow the scheduler to run again later
         return;
     }
 

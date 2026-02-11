@@ -1,0 +1,21 @@
+{
+    "getAvailabilityDomains": {
+        "17824728667190a31d1067ca5cdf8247": [
+            {
+                "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa7tnwojjcqfsi2qhgskfrwnnoxckyj4w2i3jrdpbskenknsb7jmzq",
+                "id": "ocid1.availabilitydomain.oc1..aaaaaaaaztunlny6ae4yw2vghp5go2zceaonwp6wiioe3tnh2vlaxjjl2n3a",
+                "name": "Igdi:US-ASHBURN-AD-1"
+            },
+            {
+                "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa7tnwojjcqfsi2qhgskfrwnnoxckyj4w2i3jrdpbskenknsb7jmzq",
+                "id": "ocid1.availabilitydomain.oc1..aaaaaaaatrwxaogr7dl4yschqtrmqrdv6uzis3mgbnomiagqrfhcb7mxsfdq",
+                "name": "Igdi:US-ASHBURN-AD-2"
+            },
+            {
+                "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa7tnwojjcqfsi2qhgskfrwnnoxckyj4w2i3jrdpbskenknsb7jmzq",
+                "id": "ocid1.availabilitydomain.oc1..aaaaaaaauvt2n7pijol7uqgdnnsoojcukrijtmcltvfwxazmitk235wyohta",
+                "name": "Igdi:US-ASHBURN-AD-3"
+            }
+        ]
+    }
+}
