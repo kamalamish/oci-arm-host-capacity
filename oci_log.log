@@ -3598,3 +3598,257 @@ Rate limit reached: Will retry after 19 seconds
     "message": "Out of host capacity."
 }
 [11/02/2026 18:59:04,36] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:01:07,37] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:03:06,20] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:05:05,45] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+
+Fatal error: Uncaught Hitrov\Exception\CurlException: curl error occurred: Resolving timed out after 10006 milliseconds, response:  in D:\webroot\2025\Oracle-OCI-AMPERE\oci-arm-host-capacity\src\HttpClient.php on line 31
+
+Hitrov\Exception\CurlException: curl error occurred: Resolving timed out after 10006 milliseconds, response:  in D:\webroot\2025\Oracle-OCI-AMPERE\oci-arm-host-capacity\src\HttpClient.php on line 31
+
+Call Stack:
+    0.0087     421400   1. {main}() D:\webroot\2025\Oracle-OCI-AMPERE\oci-arm-host-capacity\index.php:0
+   95.3407    1636584   2. Hitrov\OciApi->createInstance($config = class Hitrov\OciConfig { public string $region = 'us-ashburn-1'; public string $ociUserId = 'ocid1.user.oc1..aaaaaaaa7vjspetatun576orfq4mtsyxpn4hxhiyppx5n6ugkoyh2ei2kvda'; public string $tenancyId = 'ocid1.tenancy.oc1..aaaaaaaa7tnwojjcqfsi2qhgskfrwnnoxckyj4w2i3jrdpbskenknsb7jmzq'; public string $keyFingerPrint = '08:3e:79:44:df:60:fe:af:3c:9d:26:a1:f5:5e:73:dd'; public string $privateKeyFilename = 'F:/webroot/softarabic/Oracle cloud/ssh/private API KEY.lamtabbet@gmail.com-2026-02-09T00_38_54.338Z.pem'; public $availabilityDomains = NULL; public string $subnetId = 'ocid1.subnet.oc1.iad.aaaaaaaasmwsmxajzqc2vzyr73li4smnfnzcmov4dwn2hoy7i76pjzb3aogq'; public string $imageId = 'ocid1.image.oc1.iad.aaaaaaaan7mlqn5hbwzafurfnxjuhzcpskst6v43wbsrcos2c3za6sh6ux7a'; public ?int $ocpus = 4; public ?int $memoryInGBs = 24; public string $sourceDetails = *uninitialized*; public string $bootVolumeId = *uninitialized*; public string $bootVolumeSizeInGBs = '100' }, $shape = 'VM.Standard.A1.Flex', $sshKey = 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfv+gYQRz7wmpiP7eqa8uOlRqV+LI6nspZ86V8JsgJ8Ju/rs4kp+5AQLExjfGmJlzKS7mIcmBjTwwNlbVJ83sqUP6AyNIFYmHNeDH1v3iLTKrNqb7mMpUyI+PRgZjZDzZDNNJQ/12Bk8RI4m1Hq+VcDS1Nfh9nkZDvVG62pBAK0rSby50Z5ILE5yqpU7LkYhto7sOu9du+gwdF5jOmzlT70nGpMv1hTr6CKnrc9xBQPrWcjPI/tUutIkrDpLfYqPam6uXY2puT3/d+bO4jTbcKVAb+EOIkxfPerCagW4ExxWxWO5u+XiXmcvUO4k/K79KP01IXQO9R8L7s3OvyciSF ssh-key-2023-09-21', $availabilityDomain = 'Igdi:US-ASHBURN-AD-3') D:\webroot\2025\Oracle-OCI-AMPERE\oci-arm-host-capacity\index.php:98
+   99.4682    1638520   3. Hitrov\OciApi->call($config = class Hitrov\OciConfig { public string $region = 'us-ashburn-1'; public string $ociUserId = 'ocid1.user.oc1..aaaaaaaa7vjspetatun576orfq4mtsyxpn4hxhiyppx5n6ugkoyh2ei2kvda'; public string $tenancyId = 'ocid1.tenancy.oc1..aaaaaaaa7tnwojjcqfsi2qhgskfrwnnoxckyj4w2i3jrdpbskenknsb7jmzq'; public string $keyFingerPrint = '08:3e:79:44:df:60:fe:af:3c:9d:26:a1:f5:5e:73:dd'; public string $privateKeyFilename = 'F:/webroot/softarabic/Oracle cloud/ssh/private API KEY.lamtabbet@gmail.com-2026-02-09T00_38_54.338Z.pem'; public $availabilityDomains = NULL; public string $subnetId = 'ocid1.subnet.oc1.iad.aaaaaaaasmwsmxajzqc2vzyr73li4smnfnzcmov4dwn2hoy7i76pjzb3aogq'; public string $imageId = 'ocid1.image.oc1.iad.aaaaaaaan7mlqn5hbwzafurfnxjuhzcpskst6v43wbsrcos2c3za6sh6ux7a'; public ?int $ocpus = 4; public ?int $memoryInGBs = 24; public string $sourceDetails = *uninitialized*; public string $bootVolumeId = *uninitialized*; public string $bootVolumeSizeInGBs = '100' }, $baseUrl = 'https://iaas.us-ashburn-1.oraclecloud.com/20160918/instances/', $method = 'POST', $body = '{\r\n    "metadata": {\r\n        "ssh_authorized_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfv+gYQRz7wmpiP7eqa8uOlRqV+LI6nspZ86V8JsgJ8Ju/rs4kp+5AQLExjfGmJlzKS7mIcmBjTwwNlbVJ83sqUP6AyNIFYmHNeDH1v3iLTKrNqb7mMpUyI+PRgZjZDzZDNNJQ/12Bk8RI4m1Hq+VcDS1Nfh9nkZDvVG62pBAK0rSby50Z5ILE5yqpU7LkYhto7sOu9du+gwdF5jOmzlT70nGpMv1hTr6CKnrc9xBQPrWcjPI/tUutIkrDpLfYqPam6uXY2puT3/d+bO4jTbcKVAb+EOIkxfPerCagW4ExxWxWO5u+XiXmcvUO4k/K79KP01IXQO9R8L7s3OvyciSF ssh-key-2023-09-21"\r\n    },\r\n    "shape": "VM.Standard.A1.Flex",\r\n    "compar'..., $params = ???) D:\webroot\2025\Oracle-OCI-AMPERE\oci-arm-host-capacity\src\OciApi.php:101
+  104.9950    1641520   4. Hitrov\HttpClient::getResponse($curlOptions = [10002 => 'https://iaas.us-ashburn-1.oraclecloud.com/20160918/instances/', 19913 => TRUE, 68 => 1, 13 => 10, 52 => TRUE, 84 => 2, 10036 => 'POST', 10023 => [0 => 'date: Wed, 11 Feb 2026 18:06:46 GMT', 1 => 'host: iaas.us-ashburn-1.oraclecloud.com', 2 => 'content-length: 1657', 3 => 'content-type: application/json', 4 => 'x-content-sha256: Gr2Jb26yqROSW87cU6BozWUPIq5p5SbtEaDASdBfKnk=', 5 => 'Authorization: Signature version="1",keyId="ocid1.tenancy.oc1..aaaaaaaa7tnwojjcqfsi2qhgskfrwnnoxckyj4w2i3jrdpbskenknsb7jmzq/ocid1.user.oc1..aaaaaaaa7vjspetatun576orfq4mtsyxpn4hxhiyppx5n6ugkoyh2ei2kvda/08:3e:79:44:df:60:fe:af:3c:9d:26:a1:f5:5e:73:dd",algorithm="rsa-sha256",headers="date (request-target) host content-length content-type x-content-sha256",signature="WtUV8pCef6wj3ncfr5LCpMda6XJDZsli48+fQ4Jg+b0aSouY2kxh+f3X29O6NbqvAHB0r9DY0kTd4VKeaBbf9/2bKXFmVj07uR9medPjL95IlQ/KIi6DhYo1CowEeAGn6LJutrz4+feWjnqelu'...], 10015 => '{\r\n    "metadata": {\r\n        "ssh_authorized_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfv+gYQRz7wmpiP7eqa8uOlRqV+LI6nspZ86V8JsgJ8Ju/rs4kp+5AQLExjfGmJlzKS7mIcmBjTwwNlbVJ83sqUP6AyNIFYmHNeDH1v3iLTKrNqb7mMpUyI+PRgZjZDzZDNNJQ/12Bk8RI4m1Hq+VcDS1Nfh9nkZDvVG62pBAK0rSby50Z5ILE5yqpU7LkYhto7sOu9du+gwdF5jOmzlT70nGpMv1hTr6CKnrc9xBQPrWcjPI/tUutIkrDpLfYqPam6uXY2puT3/d+bO4jTbcKVAb+EOIkxfPerCagW4ExxWxWO5u+XiXmcvUO4k/K79KP01IXQO9R8L7s3OvyciSF ssh-key-2023-09-21"\r\n    },\r\n    "shape": "VM.Standard.A1.Flex",\r\n    "compar'...]) D:\webroot\2025\Oracle-OCI-AMPERE\oci-arm-host-capacity\src\OciApi.php:257
+
+[11/02/2026 19:08:50,66] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:09:50,67] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:11:50,72] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:12:50,89] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:13:50,75] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:14:50,73] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:16:07,10] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:17:07,04] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:18:07,04] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:19:07,52] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:31:32,78] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:32:32,10] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:33:32,08] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:34:32,08] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:35:32,05] Running...  
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+{
+    "code": "InternalError",
+    "message": "Out of host capacity."
+}
+[11/02/2026 19:36:32,10] Running...  
